@@ -1,0 +1,72 @@
+ div.container {
+     height: 100vh;
+     width: 100%;
+     background-color: rgb(101, 222, 226);
+     display: flex;
+     flex-direction: column;
+ }
+
+ div.section {
+     height: 95%;
+     width: 100%;
+     background-color: red;
+     display: flex;
+     flex-direction: row;
+
+ }
+
+ div.footer {
+     height: 5%;
+     width: 100%;
+     background-color: rgb(19, 16, 16);
+ }
+
+ div.left-image {
+     width: 70%;
+     height: 100%;
+     background-color: blue;
+     background-image: url('/assets/pexels-photo-2627062.jpeg');
+     background-size: cover;
+     overflow: hidden;
+ }
+ div.left-image p{
+    font-family: sans-serif;
+    font-size: 15rem;
+    transform: rotate(-90deg);
+    user-select: none;
+    color: rgba(255, 255, 255, 0.363);
+ }
+ div.right-login {
+     width: 30%;
+     height: 100%;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ div.right-login form {
+    height: 70%;     
+    width: 70%;
+    padding: 2rem;
+ }
+
+ div.right-login form input{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px 1px grey;
+ }
+ 
+ div.right-login form input[type='submit']{
+    background-color: rgb(19, 16, 16);
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    font-size: large;
+    box-shadow: none;
+ }
