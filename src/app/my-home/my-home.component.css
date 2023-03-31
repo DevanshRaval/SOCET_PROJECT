@@ -1,0 +1,38 @@
+div.my-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.left-side{
+    height: 100%;
+    width: 40%;
+    padding: 1.5rem;
+
+}
+
+div.my-box{
+    height: 100px;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: rgba(39, 49, 67, 0.5);
+    border: 0.01rem solid rgba(255, 255, 255, 0.112);    
+    border-radius: 0.4rem;
+}
+
+div.right-side{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(44, 53, 228);
+}
+
+div.div-holiday{
+    background-image: url('/assets/holiday.jpg');
+    background-size: cover;
+    height: 150px;
+    background-repeat: no-repeat;
+
+}   

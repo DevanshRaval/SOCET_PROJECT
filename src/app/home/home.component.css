@@ -1,13 +1,14 @@
  div.my-container {
-     height: 100vh;
+     height: auto;
      width: 100%;
      background-color: rgb(27,37,49);
+     
  }
-
+ 
  div.top-header {
      position: fixed;
      display: flex;
-     background-image: url('/assets/header_img.png') , linear-gradient(90deg ,rgb(47,125,196),rgb(0, 33, 124));
+     background-image: url('/assets/header_img.png') , linear-gradient(90deg ,rgb(47,125,196),rgb(32, 53, 110));
      height: 5vh;
      width: 100%;
      top: 0;
@@ -74,4 +75,18 @@ div.left-nav ul li .icon-div p{
     font-size: small;
 
 }
+
+div.my-section{
+    color: white;
+    padding-top: 4%;
+    padding-left: 1rem;
+    min-height: 100vh;
+    height: auto;
+    width: 95%;
+    /* background-color: red; */
+    margin-left: 5%;
+} 
+
+.active{
+    background-color: rgb(69, 84, 103);}
 

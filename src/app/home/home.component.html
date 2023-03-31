@@ -7,34 +7,14 @@
             <p>LOGO</p>
         </div>
         <ul>
-
-            <li>
-                <div class="icon-div"><a href="#"><i class="bi bi-house"></i></a>
-                    <p>Home</p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-div"><a href="#"><i class="bi bi-person"></i></a>
-                    <p>Me</p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-div"><a href="#"><i class="bi bi-inbox"></i></a>
-                    <p>Inbox</p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-div"><a href="#"><i class="bi bi-people"></i></a>
-                    <p>My Team</p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-div"><a href="#"><i class="bi bi-building"></i></a>
-                    <p>Org</p>
-                </div>
-            </li>
+            <li><div class="icon-div"><a routerLinkActive="active" routerLink="my-home"><i class="bi bi-house"></i><p>Home</p></a></div></li>
+            <li><div class="icon-div"><a routerLinkActive="active" routerLink="me"><i class="bi bi-person"></i><p>Me</p></a></div></li>
+            <li><div class="icon-div"><a routerLinkActive="active" routerLink="inbox"><i class="bi bi-inbox"></i><p>Inbox</p></a></div></li>
+            <li><div class="icon-div"><a routerLinkActive="active" routerLink="my-team"><i class="bi bi-people"></i><p>My Team</p></a></div></li>
+            <li><div class="icon-div"><a routerLinkActive="active" routerLink="org"><i class="bi bi-building"></i><p>Org</p></a></div></li>
         </ul>
     </div>
     <div class="my-section">
+        <router-outlet></router-outlet>
     </div>
 </div>
