@@ -7,22 +7,18 @@ import { MyTeamComponent } from './my-team/my-team.component';
 import { OrgComponent } from './org/org.component';
 import { Temp1IMGComponent } from './temp1-img/temp1-img.component';
 import { Temp2IMGComponent } from './temp2-img/temp2-img.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {
-    path: 'my-home', component: MyHomeComponent,
-    children:
-      [{ path: 'temp1-img', component: Temp1IMGComponent },
-      { path: 'temp2-img', component: Temp2IMGComponent },
-       
-      ]
-
-
-  },
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent , children : 
+    [{path: 'my-home', component: MyHomeComponent,},
   { path: 'me', component: MeComponent },
   { path: 'inbox', component: InboxComponent },
   { path: 'my-team', component: MyTeamComponent },
-  { path: 'org', component: OrgComponent },
+  { path: 'org', component: OrgComponent }]
+ },
 
 ];
 
