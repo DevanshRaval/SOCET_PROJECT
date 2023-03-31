@@ -13,6 +13,8 @@ import { MyTeamComponent } from './my-team/my-team.component';
 import { OrgComponent } from './org/org.component';
 import { Temp1IMGComponent } from './temp1-img/temp1-img.component';
 import { Temp2IMGComponent } from './temp2-img/temp2-img.component';
+import { NavOrganizationComponent } from './nav-organization/nav-organization.component';
+import { NavMyTeamComponent } from './nav-my-team/nav-my-team.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,8 @@ import { Temp2IMGComponent } from './temp2-img/temp2-img.component';
     OrgComponent,
     Temp1IMGComponent,
     Temp2IMGComponent,
+    NavOrganizationComponent,
+    NavMyTeamComponent,
   ],
   imports: [
     BrowserModule,

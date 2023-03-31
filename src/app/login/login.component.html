@@ -4,15 +4,18 @@
             <p>Welcome TO Project Name</p>
         </div>
         <div class="right-login">
-            <form>
-                <input type="text" placeholder="Username" name="name">
-                <input type="text" placeholder="Password" name="password">
-                <input type="submit" value="Login"(click)="goToHome()">
+            <form #box="ngForm">
+                <input type="text" placeholder="Username" name="name" ngModel>
+                <input type="password" placeholder="Password" name="password" ngModel>
+                <input type="submit" value="Login"(click)="goToHome(box.value)">
             </form>
+            <div *ngIf="showValue" class="alert alert-danger" role="alert">
+                User name or password is incorrect
+              </div>
         </div>
     </div>
     <div class="my-footer">
-
+    
     </div>
 </div>
 

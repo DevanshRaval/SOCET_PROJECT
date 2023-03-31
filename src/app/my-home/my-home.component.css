@@ -23,11 +23,6 @@ div.my-box {
     border-radius: 0.4rem;
 }
 
-div.right-side {
-    height: 100%;
-    width: 60%;
- 
-}
 
 div.div-holiday {
     background-image: url('/assets/holiday.jpg');
@@ -239,5 +234,47 @@ div.person-box{
     height: auto!important;
 }
  
-.todayTime-content p.currentTimeText{
+ 
+
+/* @@@@@@@@@@  RIGHT SIDE @@@@@@@@@@ */
+
+div.right-side {
+    height: 100%;
+    width: 60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.right-side > .my-box{
+    width: 90%;
+}
+div.right-side > .my-box:first-child{
+    width: 50%;
+    display: flex;
+    height: 10%;
+    align-self: flex-start;
+    padding: 0;
+
+}
+
+div.right-side > .my-box:first-child a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    width: 50%;
+    padding: 0;
+
+}
+
+.right-nav-active{
+    border: 1px solid rgb(34, 174, 255)
+}
+.right-side > .my-post{
+
+    height: auto;
+ 
+ 
 }

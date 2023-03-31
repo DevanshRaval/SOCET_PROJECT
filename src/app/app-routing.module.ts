@@ -9,16 +9,28 @@ import { Temp1IMGComponent } from './temp1-img/temp1-img.component';
 import { Temp2IMGComponent } from './temp2-img/temp2-img.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { NavOrganizationComponent } from './nav-organization/nav-organization.component';
+import { NavMyTeamComponent } from './nav-my-team/nav-my-team.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'home', component: HomeComponent , children : 
-    [{path: 'my-home', component: MyHomeComponent,},
-  { path: 'me', component: MeComponent },
-  { path: 'inbox', component: InboxComponent },
-  { path: 'my-team', component: MyTeamComponent },
-  { path: 'org', component: OrgComponent }]
- },
+  {
+    path: 'home', component: HomeComponent, children:
+      [
+        {
+          path: 'my-home', component: MyHomeComponent,
+           children: 
+           [
+            {path : 'nav-my-team' , component : NavMyTeamComponent},
+            {path : 'nav-organization' , component : NavOrganizationComponent},
+           ]
+        },
+        { path: 'me', component: MeComponent },
+        { path: 'inbox', component: InboxComponent },
+        { path: 'my-team', component: MyTeamComponent },
+        { path: 'org', component: OrgComponent },
+      ]
+  },
 
 ];
 

@@ -12,9 +12,7 @@
       </div>
     </div>
     <div class="my-box div-holiday">
-
       <p>CELEBRATION</p>
-      <!-- Large modal -->
       <!-- Button trigger modal -->
       <button type="button" (click)="showModal=true" class="  btn-primary show-holiday-btn" data-toggle="modal"
         data-target="#exampleModalLong">
@@ -52,7 +50,8 @@
                   <div class="col">
                     <div class="top four">Sep</div>
                     <div class="bottom bfour">16</div>
-                  </div><div class="col">
+                  </div>
+                  <div class="col">
                     <div class="top one">Apr</div>
                     <div class="bottom bone">2</div>
                   </div>
@@ -67,7 +66,8 @@
                   <div class="col">
                     <div class="top four">Sep</div>
                     <div class="bottom bfour">16</div>
-                  </div><div class="col">
+                  </div>
+                  <div class="col">
                     <div class="top one">Apr</div>
                     <div class="bottom bone">2</div>
                   </div>
@@ -90,12 +90,12 @@
           </div>
         </div>
       </div>
-      <!-- Large modal -->
+      <!-- modal -->
 
 
     </div>
+    <!-- @@@@@@@@@@@ ONLEAVE TODAY @@@@@@@@@@@ -->
     <div class="my-box div-onleave">
-      <!--  -->
       <div class="onleave-heading">
         <p>On Leave Today</p>
       </div>
@@ -105,19 +105,27 @@
         <div class="person-box three">DS</div>
         <div class="person-box four">DR</div>
       </div>
-      <!--  -->
     </div>
+    <!-- @@@@@@@@@@@ ONLEAVE TODAY @@@@@@@@@@@ -->
     <div class="my-box div-todayTime">
       <div class="todayTime-heading">
-        <p>Time Today :&nbsp; &nbsp;  {{todayTime | date : 'fullDate'}}</p>  
+        <p>Time Today :&nbsp; &nbsp; {{todayTime | date : 'fullDate'}}</p>
       </div>
       <div class="todayTime-content">
-         <br>
-         <p>CURRENT TIME</p>
-         <br>
-         <p class="currentTimeText">{{currentTimeOut | date : 'mediumTime'}}</p>
+        <br>
+        <p>CURRENT TIME</p>
+        <br>
+        <p class="currentTimeText">{{currentTimeOut | date : 'mediumTime'}}</p>
       </div>
     </div>
   </div>
-  <div class="right-side"></div>
+  <div class="right-side">
+    <div class="my-box nav">
+      <a routerLinkActive="right-nav-active" routerLink="nav-organization">Organization</a>
+      <a routerLinkActive="right-nav-active" routerLink="nav-my-team">My Team</a>
+    </div>
+    <div class="my-box my-post">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
