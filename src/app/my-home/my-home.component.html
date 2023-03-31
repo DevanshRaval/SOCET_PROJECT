@@ -1,24 +1,93 @@
 <div class="my-container">
-    <div class="left-side">
-        <div class="my-box div-inbox"></div>
-        <div class="my-box div-holiday">
- 
-            Holiday
-            <button>SHOW</button>
-            <!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+  <div class="left-side">
+    <div class="my-box div-inbox">
+      <div class="inbox-heading">
+        <p>Inbox</p>
+      </div>
+      <div class="inbox-content">
+        <div class="left">
+          <img src="assets/inbox-blank.svg" alt="">
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <div class="my-box div-holiday">
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
+      <p>CELEBRATION</p>
+      <!-- Large modal -->
+      <!-- Button trigger modal -->
+      <button type="button" (click)="showModal=true" class="  btn-primary show-holiday-btn" data-toggle="modal"
+        data-target="#exampleModalLong">
+        <i class="bi bi-calendar2-minus"></i>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true" [ngClass]="{'show':showModal}">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Holidays.....
+              </h5>
+              <button type="button" class="close" (click)="showModal = false" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col">
+                    <div class="top one">Apr</div>
+                    <div class="bottom bone">2</div>
+                  </div>
+                  <div class="col">
+                    <div class="top two">Apr</div>
+                    <div class="bottom btwo">6</div>
+                  </div>
+                  <div class="col">
+                    <div class="top three">May</div>
+                    <div class="bottom bthree">10</div>
+                  </div>
+                  <div class="col">
+                    <div class="top four">Sep</div>
+                    <div class="bottom bfour">16</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Large modal -->
+
+
+    </div>
+    <div class="my-box div-onleave">
+      <!--  -->
+      <div class="onleave-heading">
+        <p>On Leave Today</p>
+      </div>
+      <div class="onleave-content">
+        <div class="person-box one">CB</div>
+        <div class="person-box two">ON</div>
+        <div class="person-box three">DS</div>
+        <div class="person-box four">DR</div>
+      </div>
+      <!--  -->
+    </div>
+    <div class="my-box div-todayTime">
+      <div class="todayTime-heading">
+        <p>Time Today :&nbsp; &nbsp;  {{todayTime | date : 'fullDate'}}</p>  
+      </div>
+      <div class="todayTime-content">
+         <br>
+         <p>CURRENT TIME</p>
+         <br>
+         <p class="currentTimeText">{{currentTimeOut | date : 'mediumTime'}}</p>
+      </div>
     </div>
   </div>
-</div>
-
-        </div>
-        <div class="my-box div-onleave"></div>
-        <div class="my-box div-todayTime"></div>
-    </div>
-    <div class="right-side"></div>
+  <div class="right-side"></div>
 </div>
