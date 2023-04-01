@@ -21,6 +21,7 @@ const routes: Routes = [
           path: 'my-home', component: MyHomeComponent,
            children: 
            [
+            {path : '' , component : NavMyTeamComponent},
             {path : 'nav-my-team' , component : NavMyTeamComponent},
             {path : 'nav-organization' , component : NavOrganizationComponent},
            ]

@@ -1,0 +1,12 @@
+div.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 70%;
+    margin-top: 3rem;
+}
