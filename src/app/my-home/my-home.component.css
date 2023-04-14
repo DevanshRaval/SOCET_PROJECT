@@ -9,7 +9,7 @@ div.my-container {
 
 div.left-side {
     height: 100%;
-    width: 40%;
+    width: 30%;
     padding: 1.5rem;
 
 }
@@ -240,21 +240,20 @@ div.person-box{
 
 div.right-side {
     height: 100%;
-    width: 60%;
+    width: 40%;
     padding: 1.5rem;
     display: flex;
- 
+    
     flex-direction: column;
 }
 
 div.right-side > .my-box{
     width: 90%;
- 
 }
 div.right-side > .my-box:first-child{
     width: 50%;
     display: flex;
-    height: 10%;
+    height: 5vh;
     align-self: flex-start;
  
  
@@ -267,8 +266,8 @@ div.right-side > .my-box:first-child a{
     text-decoration: none;
     color: rgb(187, 187, 187);
     width: 50%;
-    height: 100%;
-    padding: 1rem;
+    height: 5vh;
+ 
   
 
 }
